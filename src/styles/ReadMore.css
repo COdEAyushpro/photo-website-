@@ -1,0 +1,163 @@
+/* ------------------------------
+   READ MORE PAGE MAIN CONTAINER
+--------------------------------*/
+.readmore-container {
+  background-color: #f8f1e9;
+  color: #111;
+  text-align: center;
+  padding: 80px 10%;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* ------------------------------
+   TITLE AND DATE
+--------------------------------*/
+.readmore-title {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.readmore-date {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------
+   MAIN IMAGE
+--------------------------------*/
+.readmore-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.readmore-image {
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------------------
+   DESCRIPTION TEXT
+--------------------------------*/
+.readmore-description {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #222;
+  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------------
+   RELATED BLOGS SECTION
+--------------------------------*/
+.related-section {
+  background-color: #f8f1e9;
+  padding: 60px 8%;
+}
+
+.related-section h2 {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+}
+
+/* ------------------------------
+   RELATED BLOG GRID
+--------------------------------*/
+.related-blogs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ------------------------------
+   EACH RELATED BLOG CARD
+--------------------------------*/
+.related-blog {
+  flex: 1 1 500px;
+  background-color: #f8f1e9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-blog:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog image */
+.related-blog img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Blog text content */
+.related-blog-content {
+  padding: 24px;
+  text-align: left;
+}
+
+.related-blog-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #867c72;
+  margin-bottom: 8px;
+}
+
+.related-blog-content h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  margin: 10px 0 14px;
+  color: #111;
+}
+
+.related-blog-content .desc {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+@media (max-width: 768px) {
+  .readmore-title {
+    font-size: 2.2rem;
+  }
+
+  .readmore-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .related-blogs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .related-blog {
+    width: 90%;
+  }
+
+  .related-blog img {
+    height: 280px;
+  }
+}

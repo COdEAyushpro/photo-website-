@@ -1,0 +1,96 @@
+.editorial-container {
+  background-color: #faf3ec;
+  color: #111;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+/* ===== Hero Section ===== */
+.editorial-hero {
+  padding: 100px 20px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.editorial-hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.3;
+  font-weight: 500;
+  margin-bottom: 25px;
+  letter-spacing: -0.5px;
+}
+
+.editorial-hero p {
+  font-size: 1.15rem;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+/* ===== Gallery Section ===== */
+.editorial-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.editorial-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.editorial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.editorial-image:hover img {
+  transform: scale(1.05);
+  filter: brightness(90%);
+}
+.editorial-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.editorial-image {
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.editorial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-radius: 1rem;
+}
+
+/* Hover zoom */
+.editorial-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Click zoom */
+.editorial-image.zoomed {
+  transform: scale(1.8);
+  z-index: 10;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Darken background slightly when zoomed */
+.editorial-gallery:has(.zoomed) {
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
